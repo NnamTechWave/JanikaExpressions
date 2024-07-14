@@ -12,6 +12,92 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    
+    <!-- Navbar -->
+   <nav class="navbar navbar-expand- navbar-light bg-light fixed-top">
+    <div class="container px-lg-5 px-2">
+        <div class="navbar-brand text-center order-1">
+            <span class="d-block">Janika</span>
+            <span class="d-block">Expression</span>
+        </div>
+    <div>
+        <button class="navbar-toggler me-2 border-0 outline-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <span class="d-lg-inline d-none">By Apointment Only</span>
+    </div>
+    <div class="offcanvas offcanvas-start w-lg-25" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header bg-dark text-light">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Janika Expression</h5>
+            <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="flex-shrink-0 p-3 border" >
+                <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                    Overview
+                    </button>
+                    <div class="collapse show" id="home-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="{{url_for('Home')}}" class="link-dark rounded">Home</a></li>
+                        <li><a href="/gallery.html" class="link-dark rounded">Gallery</a></li>
+                        <li><a href="#" class="link-dark rounded">Reports</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                    About
+                    </button>
+                    <div class="collapse" id="dashboard-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a class="link-dark rounded" href="{{url_for('Meet_janika')}}">Meet janika</a></li>
+                        <li><a class="link-dark rounded" href="#">Blog</a></li>
+                        <li><a class="link-dark rounded" href="#">Privacy Policy</a></li>
+                        <li><a class="link-dark rounded" href="{{url_for('FAQ')}}">F.A.Q</a></li>
+                        <li><a href="/testimonial.html" class="link-dark rounded">Testimonials</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                    Visit
+                    </button>
+                    <div class="collapse" id="orders-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">Location</a></li>
+                        <li><a href="/contact.html" class="link-dark rounded">Booking and contact</a></li>
+                        <li><a href="#" class="link-dark rounded">The Depot</a></li>
+                        <li><a href="#" class="link-dark rounded">Gift</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="border-top my-3"></li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                    Account
+                    </button>
+                    <div class="collapse" id="account-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">Associates</a></li>
+                        <li><a href="#" class="link-dark rounded">Profile</a></li>
+                        <li><a href="#" class="link-dark rounded">Settings</a></li>
+                        <li><a href="#" class="link-dark rounded">Sign out</a></li>
+                    </ul>
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar order-1">
+        <a href="{{url_for('login')}}"><button class="btn btn-dark btn-sm">Login</button></a>
+        <a href="/signup.html"><button class="btn btn-light btn-sm">Sign up</button></a>
+    </div>
+    </div>
+</nav>
+<!-- Navbar end -->
+
 </body>
 </html>
