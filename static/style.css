@@ -109,6 +109,7 @@
     object-fit: cover;
     /* object-position:center; */
   }
+
 /* Hero image
 ------------------------------------------------- */
 .bd-placeholder-img{
@@ -121,3 +122,10 @@
     flex-wrap: nowrap;
 
 }
+/* NST section
+---------------------------------- */
+.bg-image-cndex{
+    object-fit: cover;
+    object-position: top;
+    border-top-left-radius: 15px;border-bottom-right-radius: 15px;
+  }
