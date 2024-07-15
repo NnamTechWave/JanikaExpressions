@@ -173,7 +173,7 @@
     border-bottom-right-radius: 15px;
   }
 
-  * Inline image section
+  /* Inline image section
   ----------------------------------------------- */
   .row-css > .column-css {
       padding: 0;
@@ -194,6 +194,7 @@
       justify-content: center;
       text-align: center;
       width: 33%;
+      cursor: pointer;
     }
     
     /* The Modal (background) */
