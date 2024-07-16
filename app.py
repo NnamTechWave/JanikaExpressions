@@ -96,9 +96,9 @@ def index():
 #     flash('You were logged out.', 'success')
 #     return redirect(url_for('index'))
 
-# @app.route('/FAQ')
-# def FAQ():
-#     return render_template('faq.html')
+@app.route('/FAQ')
+def FAQ():
+    return render_template('faqS.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
