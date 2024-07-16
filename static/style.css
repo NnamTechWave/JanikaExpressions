@@ -356,3 +356,17 @@
   .hover-container:hover  .hover-icon {
       display: inline;
   }
+/* Book Apointment
+------------------------------------------------ */
+.book-img{
+    /* width: 70%; */
+    height: 12%;
+    /* object-fit: cover;
+    position: relative; */
+}
+.book-bg img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    object-position: bottom;
+}
