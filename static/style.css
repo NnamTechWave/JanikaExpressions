@@ -396,3 +396,29 @@
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+/* -------------------------------------- */
+/* Frequently asked questioned section page-------------- */
+#myInput {
+  padding: 13px;
+}
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  z-index: 1000;
+  position: relative;
+
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+#myUL li{
+  display: none;
+  list-style: none;
+}
