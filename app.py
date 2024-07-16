@@ -100,5 +100,9 @@ def index():
 def FAQ():
     return render_template('faqS.html')
 
+@app.route('/Meet_Janika')
+def Meet_Janika():
+    return render_template('meet_janika.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
