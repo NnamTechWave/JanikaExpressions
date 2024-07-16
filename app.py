@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.config.from_object('config')
 mysql = MySQL(app)
 
-@app.route('/')
+@app.route('/') 
 def index():
     return render_template('index.html')
     # if 'user_id' in session:
