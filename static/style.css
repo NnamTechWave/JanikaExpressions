@@ -422,3 +422,17 @@
   display: none;
   list-style: none;
 }
+/* ------------------------------------------------ */
+/* Meet janika page section
+----------------------------------------- */
+
+/* journey header image ------------------------*/
+.Journey-inner{
+  position: relative;
+}
+.Journey-hero img{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  object-position: -10%  center;
+}
