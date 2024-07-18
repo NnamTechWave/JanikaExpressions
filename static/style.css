@@ -423,8 +423,8 @@
   list-style: none;
 }
 /* ------------------------------------------------ */
-/* Meet janika page section
------------------------------------------ */
+/* Meet janika page section ----------------------------------
+---------------------------------------------------------------- */
 
 /* journey header image ------------------------*/
 .Journey-inner{
@@ -435,4 +435,26 @@
   height: 80vh;
   object-fit: cover;
   object-position: -10%  center;
+  @media (max-width:745px) {
+    height: 40vh;
+  }
+}
+/* Magazine ---------------------- */
+.image-wrapper-magazine {
+  overflow: hidden;
+  flex: 1 0 auto;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.image-wrapper-magazine img{
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: -40% top;
+}
+.responsive-image-magazine {
+  transition: transform 0.5s ease;
+}
+.image-wrapper-magazine:hover .responsive-image-magazine {
+  transform: scale(1.2);
 }
