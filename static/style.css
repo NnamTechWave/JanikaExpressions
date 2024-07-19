@@ -450,11 +450,18 @@
   height: 25rem;
   width: 100%;
   object-fit: cover;
-  object-position: -40% top;
+  object-position: top;
 }
 .responsive-image-magazine {
   transition: transform 0.5s ease;
 }
 .image-wrapper-magazine:hover .responsive-image-magazine {
   transform: scale(1.2);
+}
+/* Past project ------------------------- */
+.pro-img img{
+  object-fit: cover;
+  object-position:top;
+  height: 250px;
+  width: 100%;
 }
