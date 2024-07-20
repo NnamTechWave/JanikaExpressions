@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JanikaExpression Privacy and Policy</title>
+    <!-- Css cdn -->
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand- navbar-light bg-light fixed-top">
+        <div class="container px-lg-5 px-2">
+            <div class="navbar-brand text-center order-1">
+                <span class="d-block">Janika</span>
+                <span class="d-block">Expression</span>
+            </div>
+            <div>
+                <button class="navbar-toggler me-2 border-0 outline-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <span class="d-lg-inline d-none">By Apointment Only</span>
+            </div>
+            <div class="offcanvas offcanvas-start w-lg-25" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header bg-dark text-light">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Janika Expression</h5>
+                    <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="flex-shrink-0 p-3 border" >
+                        <ul class="list-unstyled ps-0">
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                                Overview
+                                </button>
+                                <div class="collapse show" id="home-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a href="{{url_for('index')}}" class="link-dark rounded">Home</a></li>
+                                        <li><a href="/gallery.html" class="link-dark rounded">Gallery</a></li>
+                                        <li><a href="#" class="link-dark rounded">Reports</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                                About
+                                </button>
+                                <div class="collapse" id="dashboard-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a class="link-dark rounded" href="{{url_for('Meet_Janika')}}">Meet janika</a></li>
+                                        <li><a class="link-dark rounded" href="#">Blog</a></li>
+                                        <li><a class="link-dark rounded" href="{{url_for('privacy')}}">Privacy Policy</a></li>
+                                        <li><a class="link-dark rounded" href="{{url_for('FAQ')}}">F.A.Q</a></li>
+                                        <li><a href="/testimonial.html" class="link-dark rounded">Testimonials</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                                Visit
+                                </button>
+                                <div class="collapse" id="orders-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a href="#" class="link-dark rounded">Location</a></li>
+                                        <li><a href="/contact.html" class="link-dark rounded">Booking and contact</a></li>
+                                        <li><a href="#" class="link-dark rounded">The Depot</a></li>
+                                        <li><a href="#" class="link-dark rounded">Gift</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="border-top my-3"></li>
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                                Account
+                                </button>
+                                <div class="collapse" id="account-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a href="#" class="link-dark rounded">Associates</a></li>
+                                        <li><a href="#" class="link-dark rounded">Profile</a></li>
+                                        <li><a href="#" class="link-dark rounded">Settings</a></li>
+                                        <li><a href="#" class="link-dark rounded">Sign out</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar order-1">
+                <a href=""><button class="btn btn-dark btn-sm">Login</button></a>
+                <a href="/signup.html"><button class="btn btn-light btn-sm">Sign up</button></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <main>
+        <!--  privacy write up -->
+        <section>
+            <div class="container mt-5 pt-5">
+                <div class="bg-dark p-5 rounded-top text-light">
+                  <h1>Privacy & Policy</h1>
+                  <h4 class="thin-text">Last modified:    June 27, 2024 (view archived versions)</h4>
+                </div>  
+                <div class="bg-light p-5">
+                  <div>
+                      <h3>Introduction</h3>
+                      <p>Thanks for using our products and services ("Services"). The Services are provided by Pixeel Ltd. ("Space"), located at 153 Williamson Plaza, Maggieberg, MT 09514, England, United Kingdom.</p>
+                      <p>By using our Services, you are agreeing to these terms. Please read them carefully.</p>
+                      <p>Our Services are very diverse, so sometimes additional terms or product requirements (including age requirements) may apply. Additional terms will be available with the relevant Services, and those additional terms become part of your agreement with us if you use those Services.</p>
+                  </div>
+                  <div class="mt-5">
+                      <h3>Using our services</h3>
+                      <p>You must follow any policies made available to you within the Services.</p>
+                      <p>Don't misuse our Services. For example, don't interfere with our Services or try to access them using a method other than the interface and the instructions that we provide. You may use our Services only as permitted by law, including applicable export and re-export control laws and regulations. We may suspend or stop providing our Services to you if you do not comply with our terms or policies or if we are investigating suspected misconduct.</p>
+                      <p>Using our Services does not give you ownership of any intellectual property rights in our Services or the content you access. You may not use content from our Services unless you obtain permission from its owner or are otherwise permitted by law. These terms do not grant you the right to use any branding or logos used in our Services. Don't remove, obscure, or alter any legal notices displayed in or along with our Services.</p>
+                  </div>
+                  <div class="mt-5">
+                      <h3>Privacy and copyright protection</h3>
+                      <p>Space's privacy policies explain how we treat your personal data and protect your privacy when you use our Services. By using our Services, you agree that Space can use such data in accordance with our privacy policies.</p>
+                      <p>We respond to notices of alleged copyright infringement and terminate accounts of repeat infringers according to the process set out in the U.S. Digital Millennium Copyright Act.</p>
+                      <p>We provide information to help copyright holders manage their intellectual property online. If you think somebody is violating your copyrights and want to notify us, you can find information about submitting notices and Space's policy about responding to notices in our Help Center.</p>
+                  </div>
+                  <div class="mt-5">
+                      <h3>Your content in our services</h3>
+                      <p>Some of our Services allow you to upload, submit, store, send or receive content. You retain ownership of any intellectual property rights that you hold in that content. In short, what belongs to you stays yours.</p>
+                      <p>When you upload, submit, store, send or receive content to or through our Services, you give Space (and those we work with) a worldwide license to use, host, store, reproduce, modify, create derivative works (such as those resulting from translations, adaptations or other changes we make so that your content works better with our Services), communicate, publish, publicly perform, publicly display and distribute such content. The rights you grant in this license are for the limited purpose of operating, promoting, and improving our Services, and to develop new ones. This license continues even if you stop using our Services (for example, for a business listing you have added to Space Maps). Some Services may offer you ways to access and remove content that has been provided to that Service. Also, in some of our Services, there are terms or settings that narrow the scope of our use of the content submitted in those Services. Make sure you have the necessary rights to grant us this license for any content that you submit to our Services.</p>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <section>
+            <footer>
+                <div class="bg-dark text-light p-5 mt-4">
+                    <div class="container text-center thin-text">
+                        <h4>NN7 4PS, Northampton, Northamptonshire, England, United Kingdom</h4>
+                        <p class="mt-4 fs-6 border-top p-3">Copyright © 2024 Nicholas Simon Tailoring - All Rights Reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+
+    <!-- Bootstrap cdn -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

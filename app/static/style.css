@@ -1,0 +1,467 @@
+/*
+   * Sidebar
+   */
+  
+   @media (min-width: 768px) {
+    .sidebar .offcanvas-lg {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 48px;
+    }
+    .navbar-search {
+      display: block;
+    }
+  }
+  
+  .sidebar .nav-link {
+    font-size: .875rem;
+    font-weight: 500;
+  }
+  
+  .sidebar .nav-link.active {
+    color: #2470dc;
+  }
+  
+  .sidebar-heading {
+    font-size: .75rem;
+  }
+  
+  /*
+   * Navbar
+   */
+
+  .navbar .form-control {
+    padding: .75rem 1rem;
+  }
+    /* .off-content{
+      @media (max-width:2000px) {
+        position: fixed;
+        z-index: 1000;
+        overflow: auto;
+      }
+    } */
+    .btn-toggle {
+      display: inline-flex;
+      align-items: center;
+      padding: .25rem .5rem;
+      font-weight: 600;
+      color: rgba(0, 0, 0, .65);
+      background-color: transparent;
+      border: 0;
+    }
+    .btn-toggle:hover,
+    .btn-toggle:focus {
+      color: rgba(0, 0, 0, .85);
+      background-color: #d2f4ea;
+    }
+    
+    .btn-toggle::before {
+      width: 1.25em;
+      line-height: 0;
+      content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+      transition: transform .35s ease;
+      transform-origin: .5em 50%;
+    }
+    
+    .btn-toggle[aria-expanded="true"] {
+      color: rgba(0, 0, 0, .85);
+    }
+    .btn-toggle[aria-expanded="true"]::before {
+      transform: rotate(90deg);
+    }
+    
+    .btn-toggle-nav a {
+      display: inline-flex;
+      padding: .1875rem .5rem;
+      margin-top: .125rem;
+      margin-left: 1.25rem;
+      text-decoration: none;
+    }
+    .btn-toggle-nav a:hover,
+    .btn-toggle-nav a:focus {
+      background-color: #d2f4ea;
+    }
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-0%, -10%);
+    z-index: 10;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    /* Optional: to make the caption stand out against the image */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 30rem;
+    position: relative;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100% ;
+    object-fit: cover;
+    /* object-position:center; */
+  }
+
+/* Hero image
+------------------------------------------------- */
+.bd-placeholder-img{
+    width: 100%;
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+/* NST section
+---------------------------------- */
+.bg-image-cndex{
+    object-fit: cover;
+    object-position: top;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+/* Made by Janika
+-------------------------------- */
+.mbj{
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.image-wrapper {
+    overflow: hidden;
+    margin: 10px;
+    flex: 1 0 auto;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.responsive-image {
+    /* width: 100%; */
+    height: 20%;
+    transition: transform 0.5s ease;
+}
+.image-wrapper:hover .responsive-image {
+    transform: scale(1.2);
+}/* Connect with me
+------------------------------------------------- */
+
+.connect-mr{
+    font-family:'Times New Roman', Times, serif;
+  }
+  /* Center-body-image
+  --------------------------------------------------- */
+  
+  .center-bg-img{
+    background-image: url(/static/images/bespoke_workshop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 60rem; */
+    height: 24rem;
+    justify-content: center;
+    background-position: center;
+    color: white;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  /* Inline image section
+  ----------------------------------------------- */
+  .row-css > .column-css {
+      padding: 0;
+      
+    }
+    .row-css{
+        padding: 8px;
+    }
+    
+    .row-css:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    .column-css {
+      float: left;
+      justify-content: center;
+      text-align: center;
+      width: 33%;
+      cursor: pointer;
+    }
+    
+    /* The Modal (background) */
+    .modal-css {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+    }
+    
+    /* Modal Content */
+    .modal-content-css {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      width: 90%;
+      max-width: 1200px;
+    }
+    
+    /* The Close Button */
+    .close-css {
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    
+    .close-css:hover,
+    .close-css:focus {
+      color: #999;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .mySlides {
+      display: none;
+    }
+    
+    .cursor-css {
+      cursor: pointer;
+    }
+    
+    /* Next & previous buttons */
+    .prev-css,
+    .next-css {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next-css {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev-css:hover,
+    .next-css:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    img {
+      margin-bottom: -4px;
+    }
+    
+    .caption-container {
+      text-align: center;
+      background-color: black;
+      padding: 2px 16px;
+      color: white;
+    }
+    
+    .demo {
+      opacity: 0.6;
+    }
+    
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+    
+    img.hover-shadow {
+      transition: 0.3s;
+    }
+    
+    .hover-shadow:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .image-wrapper-c {
+      overflow: hidden;
+  }
+  
+  .responsive-image-c {
+      transition: transform 0.5s ease;
+  }
+  .image-wrapper-c:hover .responsive-image-c {
+      transform: scale(1.2);
+  }
+  /* What customers think
+  ------------------------------------- */
+  .thin-text{
+      font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .image-wrapper {
+      overflow: hidden; 
+      margin: 10px;
+      flex: 1 0 auto;
+  }
+  
+  .responsive-image {
+      /* width: 100%; */
+      height: 20%;
+      transition: transform 0.5s ease;
+  }
+  
+  .image-wrapper:hover .responsive-image {
+      transform: scale(1.2);
+  }
+  .hover-icon{
+      display: none;
+      transition: 3s;
+  }
+  .hover-container:hover  .hover-icon {
+      display: inline;
+  }
+/* Book Apointment
+------------------------------------------------ */
+.book-img{
+    height: 12%;
+}
+.book-bg img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    object-position: bottom;
+}
+/* Read the blog
+-------------------------------------------------- */
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption-blog {
+    position: absolute;
+    top: 40%;
+    left: 23%;
+    transform: translate(-10%, -10%);
+    z-index: 10;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  }
+  /* Declare heights because of positioning of img element */
+  .carousel-item-b {
+    height: 20rem;
+    position: relative;
+  }
+  
+  .carousel-item-b img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  /* Apointment section 
+----------------------------------------*/
+.app-bg img{
+  height: 88%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+/* -------------------------------------- */
+/* Frequently asked questioned section page-------------- */
+#myInput {
+  padding: 13px;
+}
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  z-index: 1000;
+  position: relative;
+
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+#myUL li{
+  display: none;
+  list-style: none;
+}
+/* ------------------------------------------------ */
+/* Meet janika page section ----------------------------------
+---------------------------------------------------------------- */
+
+/* journey header image ------------------------*/
+.Journey-inner{
+  position: relative;
+}
+.Journey-hero img{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  object-position: -10%  center;
+  @media (max-width:745px) {
+    height: 40vh;
+  }
+}
+/* Magazine ---------------------- */
+.image-wrapper-magazine {
+  overflow: hidden;
+  flex: 1 0 auto;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.image-wrapper-magazine img{
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.responsive-image-magazine {
+  transition: transform 0.5s ease;
+}
+.image-wrapper-magazine:hover .responsive-image-magazine {
+  transform: scale(1.2);
+}
+/* Past project ------------------------- */
+.pro-img img{
+  object-fit: cover;
+  object-position:top;
+  height: 250px;
+  width: 100%;
+}
