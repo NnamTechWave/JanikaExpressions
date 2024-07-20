@@ -104,5 +104,9 @@ def FAQ():
 def Meet_Janika():
     return render_template('meet_janika.html')
 
+# privacy
+@app.route('/privacy')
+def privacy():
+    return render_template('privacy.html')
 if __name__ == '__main__':
     app.run(debug=True)
