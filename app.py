@@ -1,3 +1,4 @@
+import hashlib
 from flask import Flask, jsonify, render_template, request, redirect, url_for, session, flash
 from flask_mysqldb import MySQL
 import string
@@ -64,30 +65,30 @@ def index():
     
 #     return render_template('signup.html')
 
-# @app.route('/login', methods=['GET', 'POST'])
-# def login():
-#     if request.method == 'POST':
-#         username = request.form['username']
-#         password = request.form['password']
-#         hashed_password = hashlib.sha256(password.encode()).hexdigest()
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        hashed_password = hashlib.sha256(password.encode()).hexdigest()
 
-#         try:
-#             cursor = mysql.connection.cursor()
-#             cursor.execute('SELECT id FROM users WHERE username = %s AND password = %s', (username, hashed_password))
-#             user = cursor.fetchone()
-#             cursor.close()
+        try:
+            cursor = mysql.connection.cursor()
+            cursor.execute('SELECT id FROM users WHERE username = %s AND password = %s', (username, hashed_password))
+            user = cursor.fetchone()
+            cursor.close()
 
-#             if user:
-#                 session['user_id'] = user[0]
-#                 session['username'] = username
-#                 flash('Login successful!', 'success')
-#                 return redirect(url_for('index'))
-#             else:
-#                 flash('Invalid username or password', 'error')
-#         except Exception as e:
-#             flash('Error during login: ' + str(e), 'error')
+            if user:
+                session['user_id'] = user[0]
+                session['username'] = username
+                flash('Login successful!', 'success')
+                return redirect(url_for('index'))
+            else:
+                flash('Invalid username or password', 'error')
+        except Exception as e:
+            flash('Error during login: ' + str(e), 'error')
     
-#     return render_template('login.html')
+    return render_template('login.html')
 
 # @app.route('/logout')
 # def logout():
