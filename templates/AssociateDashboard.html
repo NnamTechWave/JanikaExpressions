@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if username %}
+                <div class="d-block ">
+                  <h3>Welcome, User {{ username }}.</h3>
+                  <span class="text-success">Online</span>
+                </div>
+              <!-- <a href="/logout">Logout</a> -->
+    {% else %}
+    <p>Please <a href="/login">login</a> or <a href="/signup">sign up</a>.</p>
+    {% endif %}
+</body>
+</html>
