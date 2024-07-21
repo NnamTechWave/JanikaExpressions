@@ -15,6 +15,11 @@ def index():
     # if 'user_id' in session:
     #     return render_template('home.html', username=session['username'])
     # return render_template('index.html', username=None)
+@app.route('/AssociateDashboard')
+def AssociateDashboard():
+    if 'user_id' in session:
+        return render_template('AssociateDashboard.html', username=session['username'])
+    return render_template('index.html', username=None)
 
 
 # @app.route('/signup', methods=['GET', 'POST'])
@@ -82,7 +87,7 @@ def login():
                 session['user_id'] = user[0]
                 session['username'] = username
                 flash('Login successful!', 'success')
-                return redirect(url_for('index'))
+                return redirect(url_for('AssociateDashboard'))
             else:
                 flash('Invalid username or password', 'error')
         except Exception as e:
@@ -90,12 +95,12 @@ def login():
     
     return render_template('login.html')
 
-# @app.route('/logout')
-# def logout():
-#     session.pop('user_id', None)
-#     session.pop('username', None)
-#     flash('You were logged out.', 'success')
-#     return redirect(url_for('index'))
+@app.route('/logout')
+def logout():
+    session.pop('user_id', None)
+    session.pop('username', None)
+    flash('You were logged out.', 'success')
+    return redirect(url_for('index'))
 
 @app.route('/FAQ')
 def FAQ():
