@@ -2,7 +2,7 @@ import hashlib
 from flask import Flask, jsonify, render_template, request, redirect, url_for, session, flash
 from flask_mysqldb import MySQL
 import string
-
+import uuid
 
 # Import the config
 app = Flask(__name__)
