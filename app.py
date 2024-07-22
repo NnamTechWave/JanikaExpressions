@@ -3,6 +3,7 @@ from flask import Flask, jsonify, render_template, request, redirect, url_for, s
 from flask_mysqldb import MySQL
 import string
 import uuid
+from werkzeug.utils import secure_filename
 
 # Import the config
 app = Flask(__name__)
